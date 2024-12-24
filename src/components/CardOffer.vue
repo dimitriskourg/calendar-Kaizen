@@ -1,6 +1,6 @@
 <template>
   <div
-    class="backdrop-blur-sm border-purple-500/20 p-4 bg-indigo-900/60 rounded-lg rounded-tr-none"
+    class="border-purple-500/20 p-6 bg-indigo-900/60 rounded-lg rounded-tr-none"
   >
     <div class="flex items-center gap-4">
       <div class="image w-16 h-16 rounded-lg bg-slate-400"></div>

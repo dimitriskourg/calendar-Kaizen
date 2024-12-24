@@ -1,7 +1,7 @@
 <template>
   <div
     @click="handleTileClick"
-    class="rounded-lg p-2 flex flex-col items-center justify-center backdrop-blur-sm border-2 transition-colors cursor-pointer w-32 h-32"
+    class="rounded-lg p-2 flex flex-col items-center justify-center cursor-pointer w-32 h-32"
     :class="[statusClasses, selectedMatrixTileClasses]"
   >
     <span class="text-gray-400 text-xs"> {{ title }} </span>
@@ -26,7 +26,7 @@ const statusClasses = computed(() =>
 )
 
 const selectedMatrixTileClasses = computed(() =>
-  props.isMatrixTileSelected ? 'bg-indigo-900/60 border-0 rounded-b-none' : '',
+  props.isMatrixTileSelected ? 'bg-indigo-900/60 border-0 rounded-b-none' : 'border-2',
 )
 
 const handleTileClick = () => {
