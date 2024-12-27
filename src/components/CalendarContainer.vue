@@ -16,7 +16,7 @@ import MatrixTileList from './MatrixTileList.vue'
 const tileData = ref([
   {
     id: 1,
-    title: 'Sep',
+    title: 'Dec',
     subtitle: '01',
     status: 'won',
     offer: {
@@ -28,7 +28,7 @@ const tileData = ref([
   },
   {
     id: 2,
-    title: 'Sep',
+    title: 'Dec',
     subtitle: '02',
     status: 'lost',
     offer: {
@@ -40,7 +40,7 @@ const tileData = ref([
   },
   {
     id: 3,
-    title: 'Sep',
+    title: 'Dec',
     subtitle: '03',
     status: 'won',
     offer: {
@@ -52,7 +52,7 @@ const tileData = ref([
   },
   {
     id: 4,
-    title: 'Sep',
+    title: 'Dec',
     subtitle: '04',
     status: 'lost',
     offer: {
@@ -64,7 +64,7 @@ const tileData = ref([
   },
   {
     id: 5,
-    title: 'Sep',
+    title: 'Dec',
     subtitle: '05',
     status: 'won',
     offer: {
@@ -76,7 +76,7 @@ const tileData = ref([
   },
   {
     id: 6,
-    title: 'Sep',
+    title: 'Dec',
     subtitle: '06',
     status: 'lost',
     offer: {
@@ -88,7 +88,7 @@ const tileData = ref([
   },
   {
     id: 7,
-    title: 'Sep',
+    title: 'Dec',
     subtitle: '07',
     status: 'won',
     offer: {
@@ -100,7 +100,7 @@ const tileData = ref([
   },
   {
     id: 8,
-    title: 'Sep',
+    title: 'Dec',
     subtitle: '08',
     status: 'lost',
     offer: {
@@ -112,7 +112,7 @@ const tileData = ref([
   },
   {
     id: 9,
-    title: 'Sep',
+    title: 'Dec',
     subtitle: '09',
     status: 'current',
     offer: {
@@ -124,7 +124,7 @@ const tileData = ref([
   },
   {
     id: 10,
-    title: 'Sep',
+    title: 'Dec',
     subtitle: '10',
     status: 'locked',
     offer: {
@@ -136,7 +136,7 @@ const tileData = ref([
   },
   {
     id: 11,
-    title: 'Sep',
+    title: 'Dec',
     subtitle: '11',
     status: 'locked',
     offer: {
@@ -148,7 +148,7 @@ const tileData = ref([
   },
   {
     id: 12,
-    title: 'Sep',
+    title: 'Dec',
     subtitle: '12',
     status: 'locked',
     offer: {
@@ -160,7 +160,7 @@ const tileData = ref([
   },
   {
     id: 13,
-    title: 'Sep',
+    title: 'Dec',
     subtitle: '13',
     status: 'locked',
     offer: {
@@ -172,7 +172,7 @@ const tileData = ref([
   },
   {
     id: 14,
-    title: 'Sep',
+    title: 'Dec',
     subtitle: '14',
     status: 'locked',
     offer: {

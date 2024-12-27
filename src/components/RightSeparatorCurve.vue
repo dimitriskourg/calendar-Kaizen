@@ -7,10 +7,6 @@
     height="24"
     fill="currentColor"
   >
-    <path d="M8 0C8 0 7.99609 4 5.33301 6C2.66992 8 0 8 0 8H8V0Z" />
+    <path d="M0 0C0 0 0.00390625 4 2.66699 6C5.33008 8 8 8 8 8H0V0Z" />
   </svg>
 </template>
-
-<style scoped>
-/* You can adjust the curve as needed */
-</style>

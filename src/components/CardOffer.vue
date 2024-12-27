@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="border-purple-500/20 p-6 bg-indigo-900/60 rounded-lg rounded-tr-none"
-  >
+  <div class="border-purple-500/20 p-6 bg-indigo-900/60 rounded-lg" :class="[offerSideClasses]">
     <div class="flex items-center gap-4">
       <div class="image w-16 h-16 rounded-lg bg-slate-400"></div>
       <div class="flex-1">
@@ -21,12 +19,18 @@
 import { computed } from 'vue'
 const props = defineProps({
   offer: Object,
+  offerSide: String,
   onNavigate: Function,
 })
 
 const offerStatusClasses = computed(() => ({
   'bg-green-500/20': props?.offer.label === 'WON',
   'bg-red-500/20': props?.offer.label === 'LOST',
+}))
+
+const offerSideClasses = computed(() => ({
+  'rounded-tr-none': props?.offerSide === 'right',
+  'rounded-tl-none': props?.offerSide === 'left',
 }))
 </script>
 

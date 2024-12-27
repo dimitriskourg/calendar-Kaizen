@@ -13,13 +13,17 @@
           :status="tile.status"
           :isMatrixTileSelected="selectedTileId === tile.id"
         />
-        <!-- <CardOffer :offer="tile.offer" v-if="selectedTileId === tile.id" class="col-span-full" /> -->
         <div v-if="selectedTileId === tile.id" class="col-span-full h-4 flex">
-          <div class="w-[272px] h-4"></div>
-          <SeparatorCurve class="h-4 w-4" />
-          <div class="bg-indigo-900/60 w-32 h-4"></div>
+          <LeftSideSeparator v-if="calculateSide(tile.id) === 'left'" />
+          <MiddleSideSeparator v-if="calculateSide(tile.id) === 'middle'" />
+          <RightSideSeparator v-if="calculateSide(tile.id) === 'right'" />
         </div>
-        <CardOffer :offer="tile.offer" v-if="selectedTileId === tile.id" class="col-span-full" />
+        <CardOffer
+          :offer="tile.offer"
+          v-if="selectedTileId === tile.id"
+          class="col-span-full"
+          :offer-side="calculateSide(tile.id)"
+        />
         <div v-if="tile.id % 3 === 0" class="col-span-full h-4"></div>
       </template>
     </div>
@@ -29,13 +33,18 @@
 <script setup>
 import CardOffer from './CardOffer.vue'
 import MatrixTile from './MatrixTile.vue'
-import SeparatorCurve from './SeparatorCurve.vue'
-
+import RightSideSeparator from './RightSideSeparator.vue'
+import MiddleSideSeparator from './MiddleSideSeparator.vue'
+import LeftSideSeparator from './LeftSideSeparator.vue'
 defineProps({
   tiles: Array,
   showSelectedTileOffers: Function,
   selectedTileId: Number,
 })
+
+const calculateSide = (id) => {
+  return id % 3 === 1 ? 'left' : id % 3 === 2 ? 'middle' : 'right'
+}
 </script>
 
 <style lang="scss" scoped></style>
