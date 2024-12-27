@@ -15,8 +15,8 @@
         />
         <div v-if="selectedTileId === tile.id" class="col-span-full h-4 flex">
           <LeftSideSeparator v-if="calculateSide(tile.id) === 'left'" />
-          <MiddleSideSeparator v-if="calculateSide(tile.id) === 'middle'" />
-          <RightSideSeparator v-if="calculateSide(tile.id) === 'right'" />
+          <MiddleSideSeparator v-else-if="calculateSide(tile.id) === 'middle'" />
+          <RightSideSeparator v-else />
         </div>
         <CardOffer
           :offer="tile.offer"
